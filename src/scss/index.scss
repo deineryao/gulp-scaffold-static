@@ -1,0 +1,110 @@
+@mixin p-absolute{
+    position: absolute;
+}
+
+.wrapper{
+    margin:0 auto;
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+.first-page{
+    height: 1000px;
+    background: url(../images/bg-1.jpg) 50% 50% no-repeat;
+    width:100%;
+    .icon{
+        @include p-absolute;
+        top:0;
+        left:47px;
+        width:88px;
+        height:88px;
+        img{
+            width:100%;
+        }
+    }
+    .top-pic{
+        @include p-absolute;
+        top:125px;
+        left:20px;
+    }
+    .person{
+        @include p-absolute;
+        background: url(../images/person.png) left top no-repeat;
+        width:1058px;
+        height:977px;
+        left:263px;
+        top:0;
+        .name-1{
+            background: url(../images/name-1.png) left top no-repeat;
+            width:32px;
+            height:112px;
+            @include p-absolute;
+            left:300px;
+            top:186px;
+        }
+        .name-2{
+            background: url(../images/name-2.png) left top no-repeat;
+            width:32px;
+            height:112px;
+            @include p-absolute;
+            left:450px;
+            top:463px;
+        }
+        .name-3{
+            background: url(../images/name-3.png) left top no-repeat;
+            width:32px;
+            height:112px;
+            @include p-absolute;
+            right:130px;
+            top:270px;
+        }
+    }
+    .logo{
+        @include p-absolute;
+        width:324px;
+        height:139px;
+        right:-162px;
+
+        a{
+            display: block;
+            img{
+                width:100%;
+            }
+        }
+
+    }
+    .qrcode{
+        @include p-absolute;
+        width:136px;
+        height:111px;
+        left:525px;
+        top:580px;
+    }
+}
+
+.second-page{
+    height: 681px;
+    background: url(../images/bg-2.jpg) 50% 50% no-repeat;
+    width:100%
+}
+.third-page{
+    height: 691px;
+    background: url(../images/bg-3.jpg) 50% 50% no-repeat;
+    width:100%
+}
+.forth-page{
+    height: 716px;
+    background: url(../images/bg-4.jpg) 50% 50% no-repeat;
+    width:100%
+}
+.fifth-page{
+    height: 440px;
+    background: url(../images/bg-5.jpg) 50% 50% repeat-x;
+    width:100%
+}
+
+.container{
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+}
