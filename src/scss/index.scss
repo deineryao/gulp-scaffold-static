@@ -447,3 +447,55 @@ body{
     }
   }
 }
+
+
+
+.imgAnimation1{  
+      animation-name: imgAnimation1;  
+      animation: imgAnimation1 .5s alternate;  
+      -webkit-animation: imgAnimation1 .5s alternate ;  
+      -moz-animation: imgAnimation1 .5s alternate infinite;  
+ }
+ .imgAnimation2{  
+      animation-name: imgAnimation2;  
+      animation: imgAnimation2 .5s alternate;  
+      -webkit-animation: imgAnimation2 .5s alternate ;  
+      -moz-animation: imgAnimation2 .5s alternate infinite;  
+ }
+ .imgAnimation3{  
+      animation-name: imgAnimation3;  
+      animation: imgAnimation3 .5s alternate;  
+      -webkit-animation: imgAnimation3 .5s alternate ;  
+      -moz-animation: imgAnimation3 .5s alternate infinite;  
+ }
+ .fadeRight{
+    animation-name: fadeRight;  
+    animation: fadeRight .7s alternate;  
+    -webkit-animation: fadeRight .7s alternate ;  
+    -moz-animation: fadeRight .7s alternate infinite;
+ }  
+  @-webkit-keyframes fadeRight{  
+    0%{
+        left:1366px;
+        opacity: 0;
+    }  
+    100%{
+        left: 263px;
+        opacity: 1; 
+    }  
+ }  
+ @-webkit-keyframes imgAnimation1{  
+    0%{ top:0px;opacity: 0;}  
+    100%{ top: 186px; 
+   }  
+ }  
+  @-webkit-keyframes imgAnimation2{  
+    0%{ top:0px;}  
+    100%{ top: 463px; 
+   }  
+ }
+  @-webkit-keyframes imgAnimation3{  
+    0%{ top:0px;}  
+    100%{ top: 270px; 
+   }  
+ }

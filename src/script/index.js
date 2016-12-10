@@ -36,5 +36,16 @@ $(function(){
         alert('预约手机号：'+$('#order-mobile').val());
     });
      
-
+    //动画
+    $('.first-page .person').addClass('fadeRight');
+    $('.first-page .person > div').hide();
+    setTimeout(function(){
+        $('.first-page .person .name-1').show().addClass('imgAnimation1');
+    },500);
+    setTimeout(function(){
+        $('.first-page .person .name-2').show().addClass('imgAnimation2');
+    },500);
+    setTimeout(function(){
+        $('.first-page .person .name-3').show().addClass('imgAnimation3');
+    },500);
 })
