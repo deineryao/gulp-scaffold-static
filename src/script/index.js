@@ -48,4 +48,15 @@ $(function(){
     setTimeout(function(){
         $('.first-page .person .name-3').show().addClass('imgAnimation3');
     },500);
+
+    //侧边栏收起拉开
+    $('.left-bar').click(function(){
+        $('.qr-bar').animate({"right":"-188px"},function(){
+            $('.left-bar-back').show();
+        })
+    });
+    $('.left-bar-back').click(function(){
+        $(this).hide();
+        $('.qr-bar').animate({"right":"0px"});
+    });
 })
