@@ -195,7 +195,7 @@ body{
         width: 180px;
         position: absolute;
         right: 0;
-        z-index: 110;
+        z-index: 99;
         top: 0;
         background:#fff;
         height:100%;
@@ -259,85 +259,4 @@ body{
     }
 }
 
-//预约弹窗
-.order-pop{
-    width:100%;
-    height:100%;
-    position: fixed;
-    top:0;
-    left:0;
-    z-index:100;
-    .blackbg{
-        width:100%;
-        height:100%;
-        background:#000;
-        opacity: .75;
-        filter:alpha(opacity=75);
-    }
-    .order-pop-box{
-        width:600px;
-        height:340px;
-        background:url('../images/pop-bg.jpg') repeat;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -170px;
-        margin-left: -300px;
 
-        .close{
-            width:36px;
-            height:36px;
-            background:url('../images/x.png') left top no-repeat;
-            position:absolute;
-            right:20px;
-            top:20px;
-        }
-
-        >h3{
-            font-size:36px;
-            color:#fff;
-            font-weight: 400;
-            text-align: center;
-            margin-top:50px;
-        }
-        .mobile{
-            text-align: center;
-            margin-top:28px;
-            input{
-               width:500px;
-               height:72px;
-               outline: none;
-               font-size:20px;
-               padding:0 14px; 
-            }
-            .error{
-                color:#c71111;
-                text-align: left;
-                margin-left:50px;
-                height:40px;
-                line-height: 40px;
-            }
-        }
-        .btn-box{
-            text-align: center;
-            button{
-                width:206px;
-                height:56px;
-                background:#543f24;
-                border:0;
-                color:#fff;
-                font-size:18px;
-                outline: none;
-                &:hover{
-                    background:#493316;
-                }
-                &:active{
-                    background:#393316
-                }
-            }
-            .cancel{
-                margin-right:20px
-            }
-        }
-    }
-}

@@ -1,4 +1,11 @@
 $(function(){
+    //获取url修改footer
+    var BaseUrl = window.location.href;
+    if(/^.*g.baidu.com.*$/.test(BaseUrl)){
+        $('.footer .baidu').show();
+        $('.footer .zitong').hide();
+    }
+
     // 特色轮播特效
 	var teseSwiper = $('.tese-carousel').swiper({
 		loop: true,
@@ -16,16 +23,16 @@ $(function(){
     	paginationClickable: true
 	});
     // 为切换Tab页绑定事件
-	$('.news > .selector > span[class!=more] > a').on('click', function(e){
-	  e.preventDefault();
-
-    $('.news > .selector > span[class!=more]').removeClass('active');
-    $(this).parent().addClass('active');
-    
-    var dataTag = $(this).attr('data-tag');
-    
-    $(".news > .content").hide();
-    $("#" + dataTag).show();
+	$('.news > .selector > .comn > a').on('click', function(e){
+	    e.preventDefault();
+        $('.news > .selector > .comn').removeClass('active');
+        $(this).parent().addClass('active');
+        
+        var dataTag = $(this).attr('data-tag');
+        
+        $(".news > .content,.more").hide();
+        $("#" + dataTag).show();
+        $(".more-" + dataTag).show();
 	});
 	
 	$('a[data-tag=news]').click();
@@ -46,25 +53,15 @@ $(function(){
         //成功之后处理
         $('#order-mobile').val('');
         $('.error').text('');
-        alert('预约成功');
+        $('#showOrderSucPop').show();
     });
+    $('.close').click(function(){
+        $('.order-pop').hide();
+    })
 
     $('#order-mobile').focus(function(){
         $('.error').text('');
     })
-     
-    //动画
-    $('.first-page .person').addClass('fadeRight');
-    $('.first-page .person > div').hide();
-    setTimeout(function(){
-        $('.first-page .person .name-1').show().addClass('imgAnimation1');
-    },500);
-    setTimeout(function(){
-        $('.first-page .person .name-2').show().addClass('imgAnimation2');
-    },500);
-    setTimeout(function(){
-        $('.first-page .person .name-3').show().addClass('imgAnimation3');
-    },500);
 
     //侧边栏收起拉开
     $('.left-bar').click(function(){

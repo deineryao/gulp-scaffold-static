@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/const.css" type="text/css">
     <link rel="stylesheet" href="css/list.css" type="text/css">
+    <link rel="stylesheet" href="css/orderpop.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <div class="top">
             <div class="container">
                 <div class="icon">
-                    <img src="images/icon.png">
+                    <a href="index.html"><img src="images/icon.png"></a>
                 </div>
                 <div class="logo">
                     <a href="###">
@@ -86,7 +88,10 @@
             </div>
         </div>
     </div>
-    @@include('./tpl/order-pop.html');
+    @@include("./tpl/footer.html")
+    @@include('./tpl/order-pop.html')
+    <script src="http://img.m.baidu.com/cimages/img/promo/js/sg/pc/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/order-pop.js"></script>
 </body>
 
 </html>

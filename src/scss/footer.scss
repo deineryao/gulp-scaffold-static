@@ -1,0 +1,17 @@
+.footer{
+    width: 100%;
+    background: #0c0c0c;
+    .footer-inner{
+        text-align: center;
+        padding:20px 0;
+        > p{
+            color:#fff;
+            font-size:14px;
+            line-height:24px;
+        }
+        .baidu{
+            display: none;
+        }
+    }
+    
+}

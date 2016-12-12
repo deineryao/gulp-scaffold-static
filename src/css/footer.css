@@ -1,5 +1,1 @@
-.footer{
-    height: 160px;
-    width: 100%;
-    background: #131822;
-}
+.footer{width:100%;background:#0c0c0c}.footer .footer-inner{text-align:center;padding:20px 0}.footer .footer-inner>p{color:#fff;font-size:14px;line-height:24px}.footer .footer-inner .baidu{display:none}

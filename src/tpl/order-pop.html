@@ -1,15 +1,26 @@
-<div class="order-pop">
+<!--输入框弹窗-->
+<div class="order-pop" id="showOrderPop">
     <div class="blackbg"></div>
     <div class="order-pop-box">
         <h3>预约公测福利</h3>
         <div class="close"></div>
         <div class="mobile">
-            <input type="text" placeholder="请输入手机号码">
+            <input type="text" maxlength="11" id="pop-mobile" placeholder="请输入手机号码">
             <p class="error"></p>
         </div>
         <div class="btn-box">
             <button class="cancel">取消</button>
             <button class="ensure">提交</button>
         </div>
+    </div>
+</div>
+
+<!--成功弹窗-->
+<div class="order-pop success" id="showOrderSucPop">
+    <div class="blackbg"></div>
+    <div class="order-pop-box">
+        <div class="close"></div>
+        <h3>预约成功</h3>
+        <p class="warn">请留意短信提示，感谢您的参与！</p>
     </div>
 </div>
