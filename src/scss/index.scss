@@ -118,6 +118,13 @@ $fc:#91836e;
             line-height: 56px;
             text-align: center;
         }
+        .error{
+            @include p-absolute;
+            font-size:14px;
+            left:90px;
+            top:108px;
+            color:#c71111
+        }
     }
 }
 
@@ -586,6 +593,9 @@ $fc:#91836e;
              }
              .qrcode{
                  text-align: center;
+                 img{
+                     width:100%;
+                 }
              }
          }
      }
