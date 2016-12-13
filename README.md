@@ -10,4 +10,5 @@ npm install
 npm run start
 ```
 
-**Enjoy Coding...**
+执行npm run start 会将src下的静态文件打包到dist目录下
+支持html片段
